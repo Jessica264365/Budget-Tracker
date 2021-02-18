@@ -56,18 +56,17 @@
       (function () {
         if ("serviceWorker" in navigator) {
           navigator.serviceWorker
-            .register("./service_worker.js")
+            .register("service_worker.js")
             .then((res) => {
-              console.log(res);
-              console.log("Service Worker registered successfully.");
+              console.log("We found your service worker!", res);
             })
-            .catch((error) =>
-              console.log(error)
-            );
+            .catch((error) => console.log(error));
         }
       })();
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="indexDB.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

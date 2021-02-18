@@ -1,19 +1,27 @@
+const indexedDB =
+  window.indexedDB ||
+  window.mozIndexedDB ||
+  window.webkitIndexedDB ||
+  window.msIndexedDB ||
+  window.shimIndexedDB;
 let db;
 const request = indexedDB.open("budget", 1);
 
-request.onupgradeneeded = (e) => {
-  const db = e.target.result;
+request.onupgradeneeded = function (event) {
+  const db = event.target.result;
   db.createObjectStore("pending", { autoIncrement: true });
 };
-request.onsuccess = (e) => {
-  db = e.target.result;
+
+request.onsuccess = function (event) {
+  db = event.target.result;
+
   if (navigator.onLine) {
-    checkDatabase();
+    checkForData();
   }
 };
 
-request.onerror = (e) => {
-  console.log("There was an error creating the IndexDB", e.target.errorCode);
+request.onerror = function (event) {
+  console.log("Oh no! " + event.target.errorCode);
 };
 
 function saveData(data) {
@@ -21,6 +29,7 @@ function saveData(data) {
   const store = transaction.objectStore("pending");
   store.add(data);
 }
+
 function checkForData() {
   const transaction = db.transaction(["pending"], "readwrite");
   const store = transaction.objectStore("pending");
@@ -45,4 +54,4 @@ function checkForData() {
     }
   };
 }
-window.addEventListener("online", checkDatabase);
+window.addEventListener("online", checkForData);
