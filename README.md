@@ -1,63 +1,82 @@
-# Unit 18 PWA Homework: Online/Offline Budget Trackers
+# Budget Tracker
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+- View the GitHub [repository](https://github.com/Jessica264365/Budget-Tracker)
+- View the live [Application](https://immense-mesa-51870.herokuapp.com/)
 
-Offline Functionality:
+## Table of Contents
 
-  * Enter deposits offline
+- [About the Project](https://github.com/Jessica264365/Budget-Tracker#about-the-project)
+  - [Built With](https://github.com/Jessica264365/Budget-Tracker#built-with)
 
-  * Enter expenses offline
+* [Start Your Own](https://github.com/Jessica264365/Budget-Tracker#start-your-own)
+  - [Prerequisites](https://github.com/Jessica264365/Budget-Tracker#prerequisites)
+  - [Installation](https://github.com/Jessica264365/Budget-Tracker#installation)
 
-When brought back online:
+- [License](https://github.com/Jessica264365/Budget-Tracker#license)
+- [Roadmap](https://github.com/Jessica264365/Budget-Tracker#roadmap)
+- [Contribute](https://github.com/Jessica264365/Budget-Tracker#contribute)
+- [My Contact Information](https://github.com/Jessica264365/Budget-Tracker#my-contact-information)
 
-  * Offline entries should be added to tracker.
+## About the Project
 
-## User Story
-AS AN avid traveller
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling
+This is a budget tracking application. Users can add income to their budget and subtract from it. Everything that is entered is tracked below the input boxes. It even populates a helpful chart. This application can be used offline. A service worker is used to cache static files and any information that is entered by the user is stored in the browser's indexedDB until the application is connected to the internet again. Once online all the data is stored in a MongoDB database.
 
-## Business Context
+![](./public/assets/images/burger.gif)
 
-Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
+### Built With
 
+MongoDB, Express.js, IndexedDB, Node.js, and Mongoose.js.
 
-## Acceptance Criteria
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
+## Start Your Own
 
-- - -
+To get a copy of this project on your local computer please follow these next steps.
 
-## Commit Early and Often
+### Prerequisites
 
-* One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+Read up on the documentation
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+- [Mongoose](https://mongoosejs.com/docs/guide.html)
+- [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
+- [MongoDB](https://docs.mongodb.com/guides/)
+- [Node](https://nodejs.org/en/docs/)
+- [Express](https://expressjs.com/en/guide/routing.html)
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+### Installation
 
-* Follow these guidelines for committing:
+1. Clone the repository
 
-  * Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
+   git@github.<span></span>com:Jessica264365/Budget-Tracker.git
 
-  * Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
+2. Run this command in your terminal to install all the dependencies.
 
-  * Don't commit half done work, for the sake of your collaborators (and your future self!)
+   `npm i`
 
-  * Test your application before you commit to ensure functionality at every step in the development process
+3. If you deploy the application to Heroku be sure to use your own [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=google&utm_campaign=gs_americas_united_states_search_core_brand_atlas_desktop&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624338&gclid=Cj0KCQiA4L2BBhCvARIsAO0SBdawkRll7BQ4NtXt4MxqlhRo1aepSZebGYu_njGXHjXfNlMQD330xWQaAuXuEALw_wcB) cluster and add create your own config vars in the application settings on Heroku. 
 
-* We would like you to have well over 200 commits by graduation, so commit early and often!
+### MIT License
 
-* Deploy your application with [Heroku and MongoDB Atlas.](../04-Important/MongoAtlas-Deploy.md)
+A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
-## Submission on BCS
+## Roadmap
 
-* You are required to submit the following:
+This project does not currently have an open issues. Please check the [issues](https://github.com/Jessica264365/Budget-Tracker/issues) page on GitHub for any updates.
 
-  * the URL to the deployed application
+## Contribute
 
-  * the URL to the Github repository
+If you are interesting in contributing to this project please follow these steps:
 
+1. Fork the project
+2. Create your own branch
+3. Commit your personal changes
+4. Push to the branch
+5. Do a pull request
+
+## My Contact Information
+
+Email: jessicamorrison.webdev@gmail.com
+
+GitHub Page: https://github.com/Jessica264365
+
+Link to project: https://github.com/Jessica264365/Budget-Tracker
