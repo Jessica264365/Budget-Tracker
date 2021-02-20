@@ -23,7 +23,7 @@
 
 This is a budget tracking application. Users can add income to their budget and subtract from it. Everything that is entered is tracked below the input boxes. It even populates a helpful chart. This application can be used offline. A service worker is used to cache static files and any information that is entered by the user is stored in the browser's indexedDB until the application is connected to the internet again. Once online all the data is stored in a MongoDB database.
 
-![](./public/assets/images/burger.gif)
+![](./public/images/budgettracker.GIF)
 
 ### Built With
 
@@ -53,7 +53,7 @@ Read up on the documentation
 
    `npm i`
 
-3. If you deploy the application to Heroku be sure to use your own [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=google&utm_campaign=gs_americas_united_states_search_core_brand_atlas_desktop&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624338&gclid=Cj0KCQiA4L2BBhCvARIsAO0SBdawkRll7BQ4NtXt4MxqlhRo1aepSZebGYu_njGXHjXfNlMQD330xWQaAuXuEALw_wcB) cluster and add create your own config vars in the application settings on Heroku. 
+3. If you deploy the application to Heroku be sure to use your own [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=google&utm_campaign=gs_americas_united_states_search_core_brand_atlas_desktop&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624338&gclid=Cj0KCQiA4L2BBhCvARIsAO0SBdawkRll7BQ4NtXt4MxqlhRo1aepSZebGYu_njGXHjXfNlMQD330xWQaAuXuEALw_wcB) cluster and add your own config vars in the application settings on Heroku.
 
 ### MIT License
 
