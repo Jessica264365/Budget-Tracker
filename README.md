@@ -23,7 +23,7 @@
 
 This is a budget tracking application. Users can add income to their budget and subtract from it. Everything that is entered is tracked below the input boxes. It even populates a helpful chart. This application can be used offline. A service worker is used to cache static files and any information that is entered by the user is stored in the browser's indexedDB until the application is connected to the internet again. Once online all the data is stored in a MongoDB database.
 
-![](./public/images/budgettracker.GIF)
+![](./public/images/budgettracker.gif)
 
 ### Built With
 
